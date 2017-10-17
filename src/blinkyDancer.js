@@ -5,7 +5,6 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // so we must keep a copy of the old version of this function
   this.time = timeBetweenSteps;
   //sets the blinkey dancer old step to the step of the 
-  this.oldStep = Dancer.prototype.step;
 
 };
 

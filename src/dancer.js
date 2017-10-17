@@ -8,7 +8,6 @@ var Dancer = function(top, left, timeBetweenSteps) {
   // this one sets the position to some random default point within the body
   this.step(timeBetweenSteps);
   this.setPosition(top, left);
-  debugger;
 
 };
 
