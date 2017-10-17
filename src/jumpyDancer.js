@@ -1,14 +1,19 @@
 var makeJumpyDancer = function(top, left, timeBetweenSteps) {
    // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-  this.$node = $('<span class="square"></span>');
   this.time = timeBetweenSteps;
-  
+   var styleSettings = {
+    top: top,
+    left: left
+  };
   //store top value
   this.top = top;
   //store a boolean value as false
   this.bool = false;
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="square"></span>');
+  this.$node.css(styleSettings);
+  
   
 
 };
