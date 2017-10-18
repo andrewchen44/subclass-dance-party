@@ -1,5 +1,5 @@
 var makeJumpyDancer = function(top, left, timeBetweenSteps) {
-  this.time = timeBetweenSteps;
+  this.time = 200;
   var styleSettings = {
     top: top,
     left: left
@@ -8,7 +8,7 @@ var makeJumpyDancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.bool = false;
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="square"></span>');
+  this.$node = $('<image src="Carlton Dancer.gif" class="pump" width="200" >');
   this.$node.css(styleSettings);
   
   

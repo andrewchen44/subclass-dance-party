@@ -24,5 +24,5 @@ Dancer.prototype.lineUp = function(top, left) {
     top: top,
     left: left
   };
-  this.$node.css(styleSettings);
+  this.$node.animate(styleSettings);
 };

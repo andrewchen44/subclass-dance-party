@@ -1,5 +1,5 @@
 var makeGrowyDancer = function(top, left, timeBetweenSteps) {
-  this.time = timeBetweenSteps;
+  this.time = 100;
   
   var styleSettings = {
     top: top,
@@ -7,9 +7,9 @@ var makeGrowyDancer = function(top, left, timeBetweenSteps) {
   };
 
   this.bool = false;
-  this.size = 0;
+  this.size = 200;
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="square"></span>');
+  this.$node = $('<image src="pumpgirl Dancer.gif" class="pump" width="50" >');
   this.$node.css(styleSettings);
   
   
@@ -25,13 +25,13 @@ makeGrowyDancer.prototype.step = function(timeBetweenSteps) {
   if (this.bool) {
     this.$node.css({height: (this.size + 5), width: (this.size + 5)});
     this.size = this.size + 5;
-    if (this.size > 10) {
+    if (this.size > 300) {
       this.bool = false;
     }
   } else {
     this.$node.css({height: (this.size - 5), width: (this.size - 5)});
     this.size = this.size - 5;
-    if (this.size < 10) {
+    if (this.size < 200) {
       this.bool = true;
     }
   }

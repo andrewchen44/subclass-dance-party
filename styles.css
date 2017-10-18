@@ -9,10 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -21,11 +18,21 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:30px solid red;
-  border-radius:30px;
+
   position:absolute;
+ 
 }
-.square{
-  border:30px solid red;
+.pump{
   position:absolute;
+
+}
+}
+
+.carl{
+  position:absolute;
+  background-image: url("Carlton Dancer.gif");
+   }
+   
+button{
+
 }
