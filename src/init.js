@@ -11,10 +11,10 @@ $(document).ready(function() {
     var dancer = new makeJumpyDancer( top, $('body').width() * Math.random(), Math.random() * 1000);
     $('body').append(dancer.$node);
     dancer.$node.mouseleave(function(event) {
-      dancer.$node.animate({ width: 50});
+      dancer.$node.animate({ width: 200});
     });
     dancer.$node.mouseover(function(event) {
-      dancer.$node.animate({ width: 100});
+      dancer.$node.animate({ width: 300});
     });
     window.dancers.push(dancer);
   });
@@ -29,10 +29,10 @@ $(document).ready(function() {
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
     dancer.$node.mouseleave(function(event) {
-      dancer.$node.animate({ width: 50});
+      dancer.$node.animate({ width: 200});
     });
     dancer.$node.mouseover(function(event) {
-      dancer.$node.animate({ width: 100});
+      dancer.$node.animate({ width: 300});
     });
   });
   
@@ -50,13 +50,13 @@ $(document).ready(function() {
     console.log(window.dancers);
     $('body').append(dancer.$node);
     dancer.$node.mouseleave(function(event) {
-      dancer.$node.animate({ height: 100, width: 100});
+      dancer.$node.animate({ height: 200, width: 200});
       dancer.time = 100;
       dancer.step(100);
     });
     dancer.$node.mouseover(function(event) {
       dancer.time = 100000000000000;
-      dancer.$node.animate({ height: 100, width: 100});
+      dancer.$node.animate({ height: 300, width: 300});
     });
   }); 
 
