@@ -1,11 +1,13 @@
 body, html{
   height:100%;
 }
+
 body{
   margin: 0px;
   background-size: cover;
   font-size: 18px;
 }
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
@@ -14,25 +16,20 @@ body, a:link, a:visited, a:active{
   height:32px;
   background-color: #555;
 }
+
 .title{
   background-color: #777;
 }
-.dancer{
 
+.dancer{
   position:absolute;
- 
 }
+
 .pump{
   position:absolute;
-
-}
 }
 
 .carl{
   position:absolute;
   background-image: url("Carlton Dancer.gif");
-   }
-   
-button{
-
 }

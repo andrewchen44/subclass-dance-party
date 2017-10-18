@@ -1,7 +1,7 @@
 $(document).ready(function() {
   window.dancers = [];
 
-  $('.addSquareButton').on('click', function(event) {
+  $('.addJumpyButton').on('click', function(event) {
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
     var dancerMakerFunction = window[dancerMakerFunctionName];
     var top = $('body').height() * Math.random();
@@ -16,13 +16,11 @@ $(document).ready(function() {
     dancer.$node.mouseover(function(event) {
       dancer.$node.animate({ width: 100});
     });
-
     window.dancers.push(dancer);
-
   });
 
 
-  $('.addDancerButton').on('click', function(event) {
+  $('.addBlinkyButton').on('click', function(event) {
     var dancer = new makeBlinkyDancer(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
